@@ -1,0 +1,19 @@
+{
+    "routes": [
+      {
+        "route": "/*",
+        "serve": "/index.html",
+        "statusCode": 200
+      }
+    ],
+    "navigationFallback": {
+      "rewrite": "/index.html"
+    },
+    "redirects": [
+      {
+        "source": "www.drdeclutter.co.uk/*",
+        "destination": "https://drdeclutter.co.uk/{*}",
+        "redirectType": "301"
+      }
+    ]
+  }
