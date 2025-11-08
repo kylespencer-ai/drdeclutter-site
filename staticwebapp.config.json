@@ -1,19 +1,20 @@
 {
-    "routes": [
-      {
-        "route": "/*",
-        "serve": "/index.html",
-        "statusCode": 200
-      }
-    ],
-    "navigationFallback": {
-      "rewrite": "/index.html"
-    },
-    "redirects": [
-      {
-        "source": "www.drdeclutter.co.uk/*",
-        "destination": "https://drdeclutter.co.uk/{*}",
-        "redirectType": "301"
-      }
-    ]
-  }
+  "routes": [
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  },
+  "redirects": [
+    {
+      "source": "/*",
+      "destination": "https://drdeclutter.co.uk{path}",
+      "redirectType": "301",
+      "condition": "request.headers.host == 'www.drdeclutter.co.uk'"
+    }
+  ]
+}
