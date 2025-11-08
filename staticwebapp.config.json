@@ -12,9 +12,9 @@
   "redirects": [
     {
       "source": "/*",
-      "destination": "https://drdeclutter.co.uk{path}",
+      "destination": "https://www.drdeclutter.co.uk{path}",
       "redirectType": "301",
-      "condition": "request.headers.host == 'www.drdeclutter.co.uk'"
+      "condition": "request.headers.host == 'drdeclutter.co.uk'"
     }
   ]
 }
