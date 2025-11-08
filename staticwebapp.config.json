@@ -1,34 +1,26 @@
 {
-  "$schema": "https://staticwebapp.azureedge.net/schema/v2021-03-01.json",
   "routes": [
     {
-      "route": "/.*",
-      "allowedRoles": ["anonymous"],
-      "serve": "/index.html"
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
     }
   ],
   "navigationFallback": {
     "rewrite": "/index.html"
   },
-  "responseOverrides": {
-    "404": {
-      "redirect": "/index.html",
-      "statusCode": 301
-    }
-  },
   "redirects": [
     {
-      "source": "/(.*)",
-      "destination": "https://www.drdeclutter.co.uk/$1",
+      "source": "/",
+      "destination": "https://www.drdeclutter.co.uk/",
       "redirectType": "301",
-      "conditions": [
-        {
-          "name": "host",
-          "match": "drdeclutter.co.uk",
-          "operator": "equals",
-          "ignoreCase": true
-        }
-      ]
+      "condition": "Host == 'drdeclutter.co.uk'"
+    },
+    {
+      "source": "/{*path}",
+      "destination": "https://www.drdeclutter.co.uk/{path}",
+      "redirectType": "301",
+      "condition": "Host == 'drdeclutter.co.uk'"
     }
   ]
 }
