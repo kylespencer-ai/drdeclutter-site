@@ -14,7 +14,13 @@
       "source": "/*",
       "destination": "https://www.drdeclutter.co.uk{path}",
       "redirectType": "301",
-      "condition": "request.headers.host == 'drdeclutter.co.uk'"
+      "conditions": [
+        {
+          "name": "host",
+          "match": "drdeclutter.co.uk",
+          "operator": "equals"
+        }
+      ]
     }
   ]
 }
