@@ -10,6 +10,12 @@
   --radius: 12px;
   --transition: all 0.3s ease;
 }
+/* Control native smooth scroll speed */
+html {
+    scroll-behavior: smooth;
+    /* Optional: Make it slower globally */
+    scroll-padding-top: 80px; /* Matches JS offset */
+  }
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.7;
