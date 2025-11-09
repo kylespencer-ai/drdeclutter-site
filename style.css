@@ -13,7 +13,7 @@
 /* Control native smooth scroll speed */
 html {
     /* Optional: Make it slower globally */
-    scroll-padding-top: 20px; /* Matches JS offset */
+    scroll-padding-top: 25px; /* Matches JS offset */
   }
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
