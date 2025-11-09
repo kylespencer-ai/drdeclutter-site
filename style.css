@@ -12,7 +12,6 @@
 }
 /* Control native smooth scroll speed */
 html {
-    scroll-behavior: smooth;
     /* Optional: Make it slower globally */
     scroll-padding-top: 80px; /* Matches JS offset */
   }
