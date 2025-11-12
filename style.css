@@ -225,7 +225,9 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
   }
-  
+  .founder-cta {
+    margin-top: 1.5rem;
+  }
   /* Mobile */
   @media (max-width: 768px) {
     .founder-grid {
