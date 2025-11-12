@@ -228,6 +228,9 @@ body {
   .founder-cta {
     margin-top: 1.5rem;
   }
+  .founder-bio p + p {
+    margin-top: 1.2rem;
+  }
   /* Mobile */
   @media (max-width: 768px) {
     .founder-grid {
